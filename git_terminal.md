@@ -2,6 +2,7 @@
 Чтобы показать текущую ветку в теримнале необходимо добавить следующие команды в конец файла "~/.bashrc"
 ```
 ...
+
 function git_branch {
   branch="`git branch 2>/dev/null | grep "^\*" | sed -e "s/^\*\ //"`"
   if [ "${branch}" != "" ];then
